@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="0" y="0" width="1200" height="240" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Subtle Cyber Grid -->
+  <g stroke="url(#gridGrad)" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="240"/>
+    <line x1="250" y1="0" x2="250" y2="240"/>
+    <line x1="400" y1="0" x2="400" y2="240"/>
+    <line x1="550" y1="0" x2="550" y2="240"/>
+    <line x1="700" y1="0" x2="700" y2="240"/>
+    <line x1="850" y1="0" x2="850" y2="240"/>
+    <line x1="1000" y1="0" x2="1000" y2="240"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+  </g>
+
+  <!-- Left Accent Bar -->
+  <rect x="0" y="0" width="6" height="240" rx="3" fill="url(#primaryGrad)"/>
+
+  <!-- Left Typography -->
+  <g transform="translate(48, 55)">
+    <!-- Pill Badge -->
+    <rect x="0" y="0" width="220" height="26" rx="13" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4" fill="#10B981"/>
+    <text x="26" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#93C5FD" letter-spacing="1">ENTERPRISE SECURITY SUITE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">
+      HASH<tspan fill="#38BDF8">SENTINEL</tspan> PRO
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">
+      Cryptographic Password Hash Evaluation, Entropy Benchmarking &amp; Defense Intelligence
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 118)">
+      <rect x="0" y="0" width="105" height="22" rx="4" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="10" y="15" font-family="monospace" font-size="11" fill="#38BDF8">RFC 9106 ARGON2</text>
+
+      <rect x="115" y="0" width="115" height="22" rx="4" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="125" y="15" font-family="monospace" font-size="11" fill="#818CF8">NIST SP 800-63B</text>
+
+      <rect x="240" y="0" width="115" height="22" rx="4" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="250" y="15" font-family="monospace" font-size="11" fill="#34D399">K-ANONYMITY HIBP</text>
+    </g>
+  </g>
+
+  <!-- Right Graphic - Cryptographic Hash Nodes Visualization -->
+  <g transform="translate(850, 25)">
+    <!-- Shield Outline -->
+    <path d="M 160 20 L 260 55 C 260 135 210 180 160 205 C 110 180 60 135 60 55 Z" 
+          fill="#1E293B" fill-opacity="0.6" stroke="url(#primaryGrad)" stroke-width="2"/>
+    
+    <!-- Inner Lock Motif -->
+    <circle cx="160" cy="100" r="22" fill="none" stroke="#38BDF8" stroke-width="3"/>
+    <rect x="142" y="100" width="36" height="32" rx="4" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+    <circle cx="160" cy="113" r="3.5" fill="#38BDF8"/>
+    <line x1="160" y1="116" x2="160" y2="124" stroke="#38BDF8" stroke-width="2.5"/>
+
+    <!-- Floating Hash Particles -->
+    <text x="20" y="45" font-family="monospace" font-size="10" fill="#64748B" opacity="0.7">$argon2id$v=19...</text>
+    <text x="180" y="25" font-family="monospace" font-size="10" fill="#64748B" opacity="0.6">$2b$12$e8xQ...</text>
+    <text x="210" y="160" font-family="monospace" font-size="10" fill="#10B981" opacity="0.8">SHA-512 [OK]</text>
+    <text x="10" y="170" font-family="monospace" font-size="10" fill="#EF4444" opacity="0.8">MD5 [BROKEN]</text>
+
+    <!-- Connective Nodes -->
+    <circle cx="50" cy="85" r="4" fill="#38BDF8"/>
+    <line x1="50" y1="85" x2="142" y2="105" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="270" cy="95" r="4" fill="#6366F1"/>
+    <line x1="270" y1="95" x2="178" y2="105" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="3 3"/>
+  </g>
+</svg>
+

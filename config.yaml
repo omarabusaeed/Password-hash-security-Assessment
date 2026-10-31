@@ -1,0 +1,26 @@
+paths:
+  data_dir: "data"
+  hash_dir: "data/generated_hashes"
+  wordlist_dir: "data/wordlists"
+  report_dir: "reports"
+  rockyou_path: "data/wordlists/rockyou.txt"
+
+hashing:
+  algorithms:
+    - md5
+    - sha1
+    - sha256
+    - bcrypt
+    - scrypt
+    - argon2
+  default_rounds:
+    bcrypt: 12
+    argon2: 2
+
+analysis:
+  min_entropy: 40
+  hibp_api_url: "https://api.pwnedpasswords.com/range/"
+
+dashboard:
+  title: "🛡️ HashSentinel Enterprise | Password Hash & Security Platform"
+  theme: "dark"
